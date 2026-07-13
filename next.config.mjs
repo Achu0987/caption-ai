@@ -2,6 +2,8 @@
 const nextConfig = {
   output: 'export',
   images: { unoptimized: true },
+  basePath: '/caption-ai',
+  assetPrefix: '/caption-ai/',
   webpack: (config, { isServer }) => {
     if (!isServer) {
       config.resolve.fallback = {
